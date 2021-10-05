@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <style>
+        body {
+            background-color: rgb(82, 99, 109);
+            color: rgb(141, 219, 16);
+            font: normal 25pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ola, mundo!</h1>
+
+    <script>
+        //window.prompt retorna uma string
+        var nome = window.prompt('Cual seu nome: ')
+        window.alert('seu nome é: ' + nome);
+        var n1 = Number.parseInt(prompt('Digite um numero: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro numero: '))
+        var res = n1 + n2
+        //+ usado para soma (number + number 4+2 = 6)
+        //+ usado para concatenação (string + string 4+2 = 42)
+
+        //fazer mudança de tipo
+        //Number.parseInt(n)
+        //Number.parseFloat(n)
+        //Number(n)
+
+        //converter numero para string
+        //String(n)
+        //n.toString()
+        window.alert('Soma de ' + n1 + ' + ' + n2 + '= ' + res)
+        window.alert(`Soma de ${n1} + ${n2} = ${res}`)
+
+        nome.length //tamanho da string
+        nome.toUpperCase() //tudo maiuscula
+        nome.toLowerCase() //tudo minuscula
+    </script>
+</body>
+
+</html>

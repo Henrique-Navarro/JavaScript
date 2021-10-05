@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mateus puto <3 </h1>
+    <p>Qual o resultado</p>
+    <p>Usando o <strong>DOM</strong></p>
+
+    <!--div é um retangulo que contem tudo oq ta dentro dele-->
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        window.document.write(window.document.charset)
+        window.document.write(window.document.URL)
+
+
+            <!--Selecionar por TAG-->
+
+        //innerText pega o texto sem formatação
+        //innerHTML pega o texto com formatação
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito: ' + p1.innerText)
+
+        p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Já no segundo: ' + p1.innerText)
+        p1.style.color = 'blue'
+
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+
+        var nome= window.document.getElementsByTagName('h1')[0]
+        nome.style.background= 'red'
+        nome.style.color= 'white'
+
+        
+
+            <!--Selecionar por ID-->
+
+        var retangulo = window.document.getElementById('msg')
+        retangulo.style.background = 'green'
+        window.document.getElementById('msg').innerText= 'Ola'
+        retangulo.innerText= 'Carregando'
+
+
+            <!--Selecionar por NOME-->
+
+        /*declarar o div como:
+        <div name="msg"> </div>
+        var nome= window.document.getElementeByName('msg')
+        */
+
+
+            <!--Selecionar por CLASSE-->
+
+        //declarar o div como:
+        //<div class="msg"> </div>
+
+
+
+        <!--Selecionar por SELETOR-->
+
+        /*
+        # -> ID
+        var d= window.document.querySelector('div#msg')
+
+        . -> class
+        var d= window.document.querySelector('div.msg')
+        */
+    </script>
+</body>
+
+</html>

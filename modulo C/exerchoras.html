@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora loca</title>
+</head>
+
+<body>
+    <div id="res">
+         
+    </div>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var dia = agora.getDay()
+        /*
+            0 domingo
+            1 segunda
+            2 terca
+            3 quarta
+            4 quinta
+            5 sexta
+            6 sabado
+        */
+        res.innerHTML += `<p>Agora são ${hora} horas do dia ${agora}</p>`
+
+        switch (dia) {
+            case 0:
+                res.innerHTML += "<p>Hoje é domingo</p>"
+                break
+
+            case 1:
+                res.innerHTML += "<p>Hoje é segunda</p>"
+                break
+
+            case 2:
+                res.innerHTML += "<p>Hoje é terça</p>"
+                break
+
+            case 3:
+                res.innerHTML += "<p>Hoje é quarta</p>"
+                break
+
+            case 4:
+                res.innerHTML += "<p>Hoje é quinta</p>"
+                break
+
+            case 5:
+                res.innerHTML += "<p>Hoje é sexta</p>"
+                break
+
+            case 6:
+                res.innerHTML += "<p>Hoje é sábado</p>"
+                break
+
+            default:
+                res.innerHTML += "<p>Dia inválido</p>"
+                break
+        }
+    </script>
+</body>
+
+</html>

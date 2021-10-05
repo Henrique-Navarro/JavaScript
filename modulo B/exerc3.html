@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var nome = window.prompt('Digite seu nome: ')
+        document.write(`Olá <strong> ${nome} </strong> como foi seu dia? <br>`)
+        document.write(`Seu nome tem ${nome.length} letras <br>`)
+        document.write(`${nome.toUpperCase()} maiusculo<br>`)
+        document.write(`${nome.toLowerCase()} minusculo <br>`)
+
+        var numero = window.prompt('Digite um numero: ')
+        numero = Number.parseFloat(numero)
+        document.write(`${numero.toFixed(3)} com 3 casas decimais <br>`)
+        document.write(`${numero.toFixed(1).replace('.', ',')} <br>`)
+
+        numero.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+
+        //comando colcoar a unidade de dinheiro de certo pais
+        //numero.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        //numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        //numero.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+    </script>
+</body>
+
+</html>
