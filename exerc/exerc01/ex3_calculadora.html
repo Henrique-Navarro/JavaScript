@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var resultado
+
+        //numero inicial
+        //!prompt le uma string
+        var num1 = prompt("Digite o primeiro numero")
+        //converte string -> numero
+        num1 = parseFloat(num1)
+
+        //sinal
+        do
+            var sinal = prompt("Digite o sinal")
+        while (sinal != '-' && sinal != '+' && sinal != '*' && sinal != '/')
+
+        //numero final
+        var num2 = prompt("Digite o segundo numero")
+        // converte string -> numero
+        num2 = parseFloat(num2)
+
+        //resultado
+        switch (sinal) {
+            case '-':
+                resultado = num1 - num2
+                break
+            case '+':
+                resultado = num1 + num2
+                break
+            case '*':
+                resultado = num1 * num2
+            case '/':
+                resultado = num1 / num2
+        }
+        alert(`${num1} ${sinal} ${num2} = ${resultado}`)
+    </script>
+</body>
+
+</html>
