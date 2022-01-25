@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function calcularReajuste() {
+            event.preventDefault();
+            let salario = document.getElementById("salario").value;
+            let porcentagem = document.getElementById("porcentagem").value;
+            salario = parseFloat(salario);
+            porcentagem = parseFloat(porcentagem);
+            valorTotal = (salario + (salario * (porcentagem / 100)));
+            document.getElementById("resposta").innerHTML = valorTotal;
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="calcularReajuste()">
+        <h2>Digite o salario:</h2>
+        <label for="salario"></label>
+        <input type="number" name="salario" id="salario">
+
+        <h2>Digite a porcentagem:</h2>
+        <label for="porcentagem"></label>
+        <input type="number" name="porcentagem" id="porcentagem">
+
+        <button onclick="submit">
+            enviar
+        </button>
+    </form>
+    <h2>Salario reajustado:</h2>
+    <p id="resposta"></p>
+</body>
+
+</html>
