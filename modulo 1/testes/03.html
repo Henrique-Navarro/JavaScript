@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>HTML CSS JS</title>
+
+</head>
+
+<body>
+
+    <p id='demo'>
+
+        a
+
+    </p>
+
+
+    <script>
+        const person = {
+
+            nome: 'Henrique',
+
+            sobrenome: 'Navarro',
+
+            cor: 'azul',
+
+            altura: 165,
+
+            descricao: function () {
+
+                return this.nome + " " + this.sobrenome + " tem " + this.altura + " de altura e é da cor " + this.cor;
+
+            }
+
+        };
+
+
+
+        document.getElementById('demo').innerHTML = person.descricao();
+    </script>
+</body>
+
+</html>
