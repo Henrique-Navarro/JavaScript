@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function calcularValor() {
+            event.preventDefault();
+            let litros = document.getElementById("litros").value;
+            litros = parseFloat(litros);
+
+            //variáveis para guardar a opcao selecionada
+            let select = document.getElementById("opcao");
+            let value = select.options[select.selectedIndex].value;
+
+            //logica certa?
+            switch (value) {
+                //3.3
+                case 'gasolina':
+                    if (litros <= 20) {
+                        document.getElementById("resultado").innerHTML = ((3.3 * litros) - ((3.3 * litros) * 0.04));
+                    }
+                    else {
+                        document.getElementById("resultado").innerHTML = ((3.3 * litros) - ((3.3 * litros) * 0.06))
+                    }
+
+                //2.9
+                case 'alcool':
+                    if (litros <= 20) {
+                        document.getElementById("resultado").innerHTML = ((2.9 * litros) - ((2.9 * litros) * 0.03));
+                    }
+                    else {
+                        document.getElementById("resultado").innerHTML = ((2.9 * litros) - ((2.9 * litros) * 0.05))
+                    }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="calcularValor()">
+        <select name="" id="opcao">
+            <option value="gasolina">gasolina</option>
+            <option value="alcool">alcool</option>
+        </select>
+        <h3>Digite quantos litros:</h3>
+        <label for="litros"></label>
+        <input type="text" name="litros" id="litros">
+
+        <button onclick="submit">
+            enviar
+        </button>
+
+        <p id="resultado"></p>
+    </form>
+</body>
+
+</html>

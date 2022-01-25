@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        event.preventDefault();
+        function calcularSalario() {
+            let salario = document.getElementById("salario").value;
+            let vendas = document.getElementById("vendas").value;
+
+            salario = parseFloat(salario);
+            vendas = parseFloat(vendas);
+
+            /*receba o salário fixo e o valor das vendas
+            efetuadas pelo vendedor de uma empresa. Sabendo-se que ele
+            recebe uma comissão de 3% sobre o total das vendas até R$
+            1.500,00 e mais 5% sobre a diferença (quando o total ultrapassar
+            esse valor), calcule e exiba o seu salário atual.*/
+            if (vendas <= 1500) {
+                let extra = (vendas * 0.03);
+            }
+            document.getElementById("resultado").innerHTML = (valorTotal);
+        }
+    </script>
 </head>
+
 <body>
-    <form action=""></form>
+    <form onsubmit="calcularSalario()">
+        <h3>Digite salario fixo:</h3>
+        <label for="salario"></label>
+        <input type="number" name="salario" id="salario">
+
+        <h3>Digite valor das vendas:</h3>
+        <label for="vendas"></label>
+        <input type="number" name="vendas" id="vendas">
+
+        <button onclick="submit">
+            enviar
+        </button>
+    </form>
+    <p id="resultado"></p>
 </body>
+
 </html>
