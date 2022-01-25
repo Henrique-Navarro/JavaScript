@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function verifica() {
+            event.preventDefault();
+            let num = document.getElementById("numero").value;
+
+            if (num > 0) {
+                document.getElementById("resposta").innerHTML = "positivo";
+                console.log("positivo");
+            }
+            else if (num < 0) {
+                document.getElementById("resposta").innerHTML = "negativo";
+                console.log("negativo");
+            }
+            else {
+                document.getElementById("resposta").innerHTML = "igual a 0";
+                console.log("igual a 0");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Digite um numero:</h2>
+    <form onsubmit="verifica()">
+        <label for="numero"></label>
+        <input name="numero" id="numero" type="number">
+        <button type="submit">
+            enviar
+        </button>
+        <p id="resposta"></p>
+    </form>
+
+</body>
+
+</html>

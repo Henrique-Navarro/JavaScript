@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function tabuada() {
+            event.preventDefault();
+            let num = document.getElementById("numero").value;
+            let i;
+
+            for (i = 1; i <= 10; i++) {
+                console.log(num * i);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Digite um numero:</h2>
+    <form onsubmit="tabuada()">
+        <label for="numero"></label>
+        <input type="number" name="numero" id="numero">
+
+        <button onclick="submit">
+            enviar
+        </button>
+    </form>
+    <p id="resposta"></p>
+</body>
+
+</html>
