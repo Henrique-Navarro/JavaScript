@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function calcularSalario() {
+            event.preventDefault();
+            let horas = document.getElementById("horas").value;
+            let salarioPorHora = document.getElementById("salarioPorHora").value;
+
+            horas = parseFloat(horas);
+            salarioPorHora = parseFloat(salarioPorHora);
+
+            let acrescimo = 0, horasExtra;
+            if (horas > 40) {
+                horasExtra = horas - 40;
+                acrescimo = horasExtra * salarioPorHora / 2;
+                horas = 40;
+            }
+
+            document.getElementById("resultado").innerHTML = ((salarioPorHora * horas) + acrescimo);
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="calcularSalario()">
+        <h3>Horas de trabalho:</h3>
+        <label for="horas"></label>
+        <input type="number" name="horas" id="horas">
+
+        <h3>Salario por hora:</h3>
+        <label for="salarioPorHora"></label>
+        <input type="number" name="salarioPorHora" id="salarioPorHora">
+
+        <button onclick="submit">
+            enviar
+        </button>
+    </form>
+
+    <p id="resultado"></p>
+</body>
+
+</html>
