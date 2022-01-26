@@ -17,10 +17,10 @@
             salarioPorHora = parseFloat(salarioPorHora);
 
             let acrescimo = 0, horasExtra;
-            if (horas > 40) {
-                horasExtra = horas - 40;
-                acrescimo = horasExtra * salarioPorHora / 2;
-                horas = 40;
+            if (horas > 160) {
+                horasExtra = horas - 160;
+                acrescimo = horasExtra * salarioPorHora * 1.5;
+                horas = 160;
             }
 
             document.getElementById("resultado").innerHTML = ((salarioPorHora * horas) + acrescimo);

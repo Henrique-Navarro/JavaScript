@@ -6,6 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        function calcularIdade() {
+            event.preventDefault();
+
+            let anoNascimento = document.getElementById("anoNascimento").value;
+            anoNascimento = parseInt(anoNascimento);
+
+            let anoIngresso = document.getElementById("anoIngresso").value;
+            anoIngresso = parseInt(anoIngresso);
+
+            let idade = 2022 - anoNascimento;
+            let anosTrabalhando = anoNascimento - anoIngresso;
+
+            if (idade >= 65 || anosTrabalhando >= 30 || idade >= 60 && anosTrabalhando >= 25) {
+                document.getElementById("resultado").innerHTML = "REQUERER APOSENTADORIA";
+            }
+            else {
+                document.getElementById("resultado").innerHTML = "NÃO REQUERER APOSENTADORIA";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -22,7 +44,7 @@
             enviar
         </button>
 
-        <p id="resposta"></p>
+        <p id="resultado"></p>
     </form>
 </body>
 
