@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML CSS JS</title>
+</head>
+<body>
+  <button onclick="funcao()">
+    substituir
+  </button>
+  <p id="demo1">Ola eu sou o Henrique</p>
+  
+  <button onclick="upper()">
+    upper
+  </button>
+  <p id="demo2">
+    Ola eu sou o Henrique
+  </p>
+  
+  <button onclick="lower()">
+    lower
+  </button>
+  <p id="demo3">
+    OLA EU SOU O HENRIQUE
+  </p>
+  
+  <script>
+ function funcao(){
+      let text=document.getElementById("demo1").innerHTML;
+      document.getElementById("demo1").innerHTML=text.replace("Henrique","Vinicius");
+}
+
+function upper(){
+  let text=document.getElementById("demo2").innerHTML;
+  document.getElementById("demo2").innerHTML=text.toUpperCase();
+}
+
+function lower(){
+  let text=document.getElementById("demo3").innerHTML;
+  document.getElementById("demo3").innerHTML=text.toLowerCase();
+}
+  </script>
+</body>
+</html>
