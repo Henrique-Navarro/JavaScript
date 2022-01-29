@@ -9,11 +9,50 @@
 
     <script>
         //fazer tela de cadastro
+        function cadastrar() {
+            event.preventDefault();
+            let nome = document.getElementById("nome").innerHTML;
+            let email = document.getElementById("email").innerHTML;
+            let cpf = document.getElementById("CPF").innerHTML;
+            let idade = document.getElementById("idade").innerHTML;
+
+            document.getElementById("resultadoNome").innerHTML = "Seu nome: ";
+            document.getElementById("resultadoEmail").innerHTML = "Seu email: " + email;
+            document.getElementById("resultadoCPF").innerHTML = "Seu cpf: " + cpf;
+            document.getElementById("resultadoIdade").innerHTML = "Sua idade: ";
+        }
     </script>
 </head>
 
 <body>
+    <!--nome, email- CPF, idade e exibir-->
+    <form onsubmit="cadastrar()">
+        <h3>Digite seu nome:</h3>
+        <label for="nome"></label>
+        <input type="text" name="nome" id="nome">
 
+        <h3>Digite seu email:</h3>
+        <label for="email"></label>
+        <input type="text" name="email" id="email">
+
+        <h3>Digite seu CPF:</h3>
+        <label for="CPF"></label>
+        <input type="text" name="CPF" id="CPF">
+
+        <h3>Digite sua idade:</h3>
+        <label for="idade"></label>
+        <input type="number" name="idade" id="idade">
+
+        <button onclick="submit">
+            enviar
+        </button>
+
+        <h3>Suas informações:</h3>
+        <p id="resultadoNome"></p>
+        <p id="resultadoEmail"></p>
+        <p id="resultadoCPF"></p>
+        <p id="resultadoIdade"></p>
+    </form>
 </body>
 
 </html>
