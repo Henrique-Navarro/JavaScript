@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //maneiras de se construir um objeto
+
+        //por meio da function
+        function Matematica1() {
+            this.somar = function (n1, n2) {
+                return n1 + n2;
+            }
+        }
+
+        //por meio da classe
+        class Matematica2 {
+            somar(n1, n2) {
+                return n1 + n2;
+            }
+        }
+
+        //por meio do objeto literal
+        let matematica3 = {
+            somar: function (n1, n2) {
+                return n1 + n2;
+            }
+        }
+
+        let m1 = new Matematica1();
+        console.log(m1.somar(6, 5));
+
+        let m2 = new Matematica2();
+        console.log(m2.somar(6, 5));
+
+        console.log(matematica3.somar(6, 5));
+    </script>
+</body>
+
+</html>
