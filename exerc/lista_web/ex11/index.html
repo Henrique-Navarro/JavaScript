@@ -16,7 +16,7 @@
             let cpf = document.getElementById("CPF").innerHTML;
             let idade = document.getElementById("idade").innerHTML;
 
-            document.getElementById("resultadoNome").innerHTML = "Seu nome: ";
+            document.getElementById("resultadoNome").innerHTML = `Seu nome: ${nome}`;
             document.getElementById("resultadoEmail").innerHTML = "Seu email: " + email;
             document.getElementById("resultadoCPF").innerHTML = "Seu cpf: " + cpf;
             document.getElementById("resultadoIdade").innerHTML = "Sua idade: ";
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <!--nome, email- CPF, idade e exibir-->
+    <!--nome, email, CPF, idade e exibir-->
     <form onsubmit="cadastrar()">
         <h3>Digite seu nome:</h3>
         <label for="nome"></label>
