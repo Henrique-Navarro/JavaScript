@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Pessoa() {
+            this.nome = "Henrique";
+            this.idade = 19;
+            this.print = function (numero) {
+                alert(numero);
+            }
+
+            this.returnAnimal = function (animal) {
+                return animal;
+            }
+        }
+
+        function Animal(nome, peso) {
+            if (nome == undefined || peso == undefined || raca == undefined) {
+                nome = 'Cachorro';
+                peso = 12;
+                raca = 'bulldog';
+            } s
+            this.nome = nome;
+            this.peso = peso;
+            this.raca = raca;
+        }
+
+        pessoa = new Pessoa();
+        animal = new Animal();
+
+        alert(pessoa.returnAnimal(animal).raca);
+    </script>
+</body>
+
+</html>
