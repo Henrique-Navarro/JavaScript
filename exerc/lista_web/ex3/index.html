@@ -11,17 +11,60 @@
         //funcao para receber dados
         function calcularICM() {
             event.preventDefault();
+            let altura = document.getElementById("altura").value;
+            let peso = document.getElementById("peso").value;
+            let selection = document.getElementById("select");
+            let opcao = select.options[select.selectedIndex].value;
+
+            let icm = (peso / ((altura / 100) ** 2));
+            document.getElementById("resultado").innerHTML = icm;
+
+            switch (opcao) {
+                case "masculino":
+                    if (icm < 20.7) {
+                        document.getElementById("resultado").innerHTML = icm + " é considerado abaixo do peso"
+                    }
+                    else if (icm >= 20.7 && icm < 31.1) {
+                        document.getElementById("resultado").innerHTML = icm + " é considerado peso normal"
+                    }
+                    else if (icm >= 31.1) {
+                        document.getElementById("resultado").innerHTML = icm + " é considerado acima do peso"
+                    }
+
+                case "feminino":
+                    if (icm < 19.1) {
+                        document.getElementById("resultado").innerHTML = icm + " é considerado abaixo do peso"
+                    }
+                    else if (icm >= 19.1 && icm < 32.3) {
+                        document.getElementById("resultado").innerHTML = icm + " é considerado peso normal"
+                    }
+                    else if (icm >= 32.3) {
+                        document.getElementById("resultado").innerHTML = icm + " é considerado acima do peso"
+                    }
+            }
         }
     </script>
 </head>
 
 <body>
-    <h2>Digite sua altura(cm):</h2>
     <form onsubmit="calcularICM()">
+        <h2>Escolha a opção</h2>
+        <select name="select" id="select">
+            <option value="masculino">masculino</option>
+            <option value="feminino">feminino</option>
+        </select>
+
+        <h2>Digite sua altura(cm):</h2>
         <label for="altura"></label>
         <input type="number" name="altura" id="altura">
 
+        <h2>Digite seu peso(kg):</h2>
+        <label for="peso"></label>
+        <input type="number" name="peso" id="peso">
+
         <button onclick="submit">enviar</button>
+
+        <p id="resultado"></p>
     </form>
 </body>
 
