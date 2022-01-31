@@ -1,0 +1,37 @@
+19. Identifique	 as	 classes	 e	 implemente	 um	 programa	 para	 a	 seguinte	 especificação:	 “O	
+supermercado	 vende	 diferentes	 tipos	 de	 produtos.	 Cada	 produto	 tem	 um	 preço	 e	 uma	
+quantidade	em	estoque.	Um	pedido	de	um	cliente	é	composto	de	itens,	onde	cada	item	
+especifica	o	produto	que	o	cliente	deseja	e	a	respectiva	quantidade. Esse	pedido	pode	ser	
+pago	em	dinheiro,	cheque	ou	cartão.”
+
+20. Faça	um programa	de agenda	telefônica, com	as	classes	Agenda	e	Contato.
+
+21. Faça	 um	 programa	 para	 controle	 de	 empréstimo	 de	 livros,	 com	 as	 classes Emprestimo,	
+Livro e	Pessoa.
+
+22. Faça	 uma	 programa	 para	 representar	a	árvore	genealógica	 de	 uma	 família.	 Para	 tal,	 crie	
+uma	classe	Pessoa	que	permita	indicar,	além	de	nome	e	idade,	o	pai	e	a	mãe.	Tenha	em	
+mente	que	pai	e	mãe	também	são	do	tipo	Pessoa.
+
+    23. Faça	 um	 programa	 que	 calcule	 a	 área	 de	 uma	 figura	 geométrica.	 Aceite	 quatro	 tipos	 de	
+figura	geométrica:	quadrado,	retângulo,	triângulo	e	círculo.	Use	herança	e	polimorfismo.
+
+24. Adicione	 a	 funcionalidade	 de	 exibição	 do	 total	 de	 contatos	 registrados	 na	 agenda	
+disponível	em	https://github.com/leomurta/agenda
+
+25. Adicione	 a	 funcionalidade	 de	 busca	 por	 contato	 na	 agenda	 disponível	 em	
+https://github.com/leomurta/agenda
+
+26. Adicione	 a	 funcionalidade	 de	 ordenação	 dos	 contatos	 na	 agenda	 disponível	 em	
+https://github.com/leomurta/agenda
+
+27. Adicione	 o	 registro	 de	 mais	 de	 um	 telefone	 por	 contato	 na	 agenda	 disponível	 em	
+https://github.com/leomurta/agenda
+
+28. Adicione	o	registro	de	endereço comercial	e	residencial	por	contato	na	agenda	disponível	
+em	https://github.com/leomurta/agenda
+
+29. Explique	com	suas	palavras	como	é	o	mecanismo	de	listener	usado	no	Swing	para	permitir	
+que	os	eventos	de	clique	dos	botões	sejam	tratados	pelo	programa.
+
+30. Qual	a	diferença	entre	abstração,	encapsulamento	e	modularidade?
