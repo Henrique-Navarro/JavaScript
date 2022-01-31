@@ -10,6 +10,7 @@
     <script>
         event.preventDefault();
         function calcularSalario() {
+            event.preventDefault();
             let salario = document.getElementById("salario").value;
             let vendas = document.getElementById("vendas").value;
 
@@ -23,8 +24,14 @@
             esse valor), calcule e exiba o seu salário atual.*/
             if (vendas <= 1500) {
                 let extra = (vendas * 0.03);
+                let valorTotal = salario + extra;
+                document.getElementById("resultado").innerHTML = (valorTotal);
             }
-            document.getElementById("resultado").innerHTML = (valorTotal);
+            else {
+                let diferenca = vendas - 1500;
+                let valorTotal = salario + (1500 * 0.03) + (diferenca * 0.05);
+                document.getElementById("resultado").innerHTML = valorTotal;
+            }
         }
     </script>
 </head>

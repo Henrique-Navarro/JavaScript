@@ -11,15 +11,18 @@
         //fazer tela de cadastro
         function cadastrar() {
             event.preventDefault();
-            let nome = document.getElementById("nome").innerHTML;
-            let email = document.getElementById("email").innerHTML;
-            let cpf = document.getElementById("CPF").innerHTML;
-            let idade = document.getElementById("idade").innerHTML;
+            let nome = document.getElementById("nome").value;
+            let email = document.getElementById("email").value;
+            let cpf = document.getElementById("CPF").value;
+            let idade = document.getElementById("idade").value;
 
-            document.getElementById("resultadoNome").innerHTML = `Seu nome: ${nome}`;
+            document.getElementById("resultadoNome").innerHTML = "Seu nome: " + nome;
             document.getElementById("resultadoEmail").innerHTML = "Seu email: " + email;
             document.getElementById("resultadoCPF").innerHTML = "Seu cpf: " + cpf;
-            document.getElementById("resultadoIdade").innerHTML = "Sua idade: ";
+            document.getElementById("resultadoIdade").innerHTML = "Sua idade: " + idade;
+
+            /*explicar como funciona processo de envio de informações, 
+            processamento e resposta acontece na comunicação entre cliente e servidor.*/
         }
     </script>
 </head>
@@ -31,7 +34,7 @@
         <label for="nome"></label>
         <input type="text" name="nome" id="nome">
 
-        
+
         <h3>Digite seu email:</h3>
         <label for="email"></label>
         <input type="text" name="email" id="email">
