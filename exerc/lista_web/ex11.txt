@@ -1,0 +1,9 @@
+os campos do formulario são criados por HTML, utilizando a tag <input>, e adicionando CSS,
+é possível estilizar tais elementos usando javaScript, quando o botão "enviar" for clicado,
+eu chamo uma função que é responsável por coletar todas as informações digitadas
+nos campos do formulário e atribui as mesmas dentro de determinadas variáveis. Para mostrar 
+as informações na tela eu faço uma tag de paragrafo <p id="resultado"> receber
+o valor das variáveis, e assim aparecendo na tela as informações Os servidores da web aguardam
+as mensagens de solicitação do cliente, processam-nas quando chegam e respondem ao navegador
+da web com uma mensagem de resposta HTTP. Quando uma página HTML é retornada, ela é processada
+pelo navegador da web.
