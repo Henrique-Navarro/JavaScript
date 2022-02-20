@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <p>bom dia tag 1</p>
+    <p id="paragrafo2">bom dia tag 2</p>
+    <p name="paragrafo3">bom dia tag 3</p>
+    <p class="paragrafos">bom dia tag 4</p>
+
+    <script>
+        //selecionar por tag
+        var el = document.getElementsByTagName('p')[0];
+        el.style.background = 'green';
+
+        //selecionar por ID
+        var el = document.getElementById('paragrafo2');
+        el.style.background = 'blue';
+
+        //selecionar por nome
+        var el = document.getElementsByName('paragrafo3')[0];
+        el.style.background = 'yellow';
+
+        //selecionar por classe
+        var el = document.getElementsByClassName('paragrafos')[0];
+        el.style.background = 'red';
+
+        //selecionar por selector
+        var el = document.querySelector('p#paragrafo2');
+        el.style.color = 'white';
+    </script>
+</body>
+
+</html>
