@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    text-align: left;
+    width: 60%;
+    background-color: rgb(233, 233, 185);
+    margin: 4% auto;
+    padding: 3%;
+}
+
+#resImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3% auto;
+}
