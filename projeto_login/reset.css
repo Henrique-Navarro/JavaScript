@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+  
+body{
+    background-image:linear-gradient(45deg, black,crimson)
+}
+
+.voltar{
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 38px;
+    height: 38px;
+    border-radius: 0;
+    background-image: url(imagens/seta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

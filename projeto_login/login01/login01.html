@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../login01/login01.css">
+    <link rel="stylesheet" href="../reset.css">
+
+    <script src="../login01/login01.js"></script>
+</head>
+
+<body>
+    <a href="../index.html"><div class="voltar"></div></a>
+    <span style="color:crimson">.</span>
+    <main>
+        <form onsubmit="verificar()">
+            <p>Login</p>
+            <div class="linha">
+                <div class="coluna texto">
+                    e-mail:
+                </div>
+                <div class="coluna inputs">
+                    <label for="email"><input type="text" name="email"></label>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="coluna texto">
+                    senha:
+                </div>
+                <div class="coluna inputs">
+                    <label for="senha"><input type="password" name="senha"></label>
+                </div>
+            </div>
+            <button onclick="submit">
+                enviar
+            </button>
+        </form>
+        <a href="" id="esqueceu">esqueceu a senha?</a>
+    </main>
+</body>
+
+</html>
