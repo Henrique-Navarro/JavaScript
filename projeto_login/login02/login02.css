@@ -7,10 +7,6 @@ main{
     display: inline-block;
 }
 
-body#body{
-    background-color: white;
-}
-
 form{
     width: 24.7%;
     height: 100vh;
@@ -21,23 +17,36 @@ form{
 
 p{
     line-height: 7;
-    color: black;
+    color: white;
     font-size: 30px;
+    letter-spacing: 1px;
 }
 
 input, button{
     width: 100%;
     padding: 8px;
     border: none;
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 button{
-    margin-top: 10%;
-    color: blue;
+    color: white;
     border-radius: 10px;
+    background-color: rgb(0,0,0,0.7);
+}
+
+button:hover{
+    background-color: rgb(0,0,0,1);
+    color: white;
 }
 
 a{
     text-align: right;
+    color: blue;
+    text-decoration:none;
+}
+
+#forget{
+    width: 100%;
+    margin:6% 0px 10% 24%;
 }

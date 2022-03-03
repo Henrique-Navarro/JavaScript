@@ -5,4 +5,5 @@ function verificar() {
     alert("Ola!");
 
     //!colocar link social media
+    //!colocar imagem transparente no fundo
 }
