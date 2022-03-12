@@ -1,0 +1,21 @@
+center{
+    background-color: yellow;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.input, button{
+    width: auto;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0px 5px 0px;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+ input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}

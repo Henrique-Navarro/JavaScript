@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        Calculadora de area
+        <div>
+            <form onsubmit="calcular()">
+                <select name="calculo" id="calculo" class="input">
+                    <option value="area">area</option>
+                    <option value="volume">volume</option>
+                </select>
+
+                <select name="figura" id="figura" class="input">
+                    <option value="quadrado">quadrado</option>
+                    <option value="triangulo">triangulo</option>
+                    <option value="circulo">circulo</option>
+                    <option value="trapezio">trapezio</option>
+                </select>
+
+                <input type="number" id="base" class="input" placeholder="base">
+                <input type="number" id="altura" class="input" placeholder="altura">
+
+                <br>
+                <button onclick="submit">
+                    enviar
+                </button>
+            </form>
+
+            <p id="resultado"></p>
+        </div>
+    </center>
+</body>
+
+</html>
