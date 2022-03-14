@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML CSS JS</title>
+</head>
+
+<body>
+  <main class="slideshow-container">
+    <h1>Slideshow</h1>
+
+    <div class="imgs-background fade" style="background:green;">
+      <div class="numbers">1 / 4</div>
+      <img>
+      <div class="caption-text">caption one</div>
+    </div>
+
+    <div class="imgs-background fade" style="background:purple;">
+      <div class="numbers">2 / 4</div>
+      <img>
+      <div class="caption-text">caption two</div>
+    </div>
+
+    <div class="imgs-background fade" style="background:orange;">
+      <div class="numbers">3 / 4</div>
+      <img>
+      <div class="caption-text">caption three</div>
+    </div>
+
+    <div class="imgs-background fade" style="background:red;">
+      <div class="numbers">4 / 4</div>
+      <img>
+      <div class="caption-text">caption four</div>
+    </div>
+
+    <a class="arrow prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="arrow next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="container-dot">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+  </main>
+</body>
+
+</html>
