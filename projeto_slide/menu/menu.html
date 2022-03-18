@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="../default/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <nav class="nav-bar">
         <ul class="menu">
-            <li><a href="">01</a></li>
-            <li><a href="">02</a></li>
-            <li><a href="">03</a></li>
-            <li><a href="">04</a></li>
-            <li><a href="">perfil</a></li>
-            <li>img</li>
+            <li class="logo">LOGO</li>
+            <li class="item"><a href="">Grid 1</a></li>
+            <li class="item"><a href="">Grid 2</a></li>
+            <li class="item"><a href="">Grid 3</a></li>
+            <li class="bars" onclick="menuDrop()"><i class="fa fa-bars"></i></li>
+            <li class="item profile"><a href="">profile</a></li>
+            <li class="item config" onclick="theme()"><a href="">config</a></li>
         </ul>
     </nav>
+    <h2 id="teste">ola</h2>
+
+    <script src="menu.js"></script>
 </body>
+
 </html>

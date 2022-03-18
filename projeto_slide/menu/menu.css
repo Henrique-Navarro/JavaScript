@@ -1,3 +1,11 @@
+body{
+    padding-top: 6%;
+}
+
+.theme{
+    
+}
+
 nav{
     position: fixed;
     width: 100%;
@@ -7,6 +15,11 @@ nav{
 ul{
     width: 100%;
     background: #333;
+}
+
+.logo{
+    display: inline-block;
+    width: auto;
 }
 
 ul li{
@@ -19,16 +32,36 @@ ul li a{
     color: white;
 }
 
-ul li:nth-child(5){
-    float: right;
-}
-ul li:nth-child(6){
-    float: right;
-}
+.bars{display: none;}
+.config, .profile{float: right;}
 
-ul li:hover a{
-    color: black;
-}
-ul li:hover{
-    background: #ddd;
+ul li:hover a{color: black;}
+ul li:hover .fa-bars{color:black;}
+ul li:hover{background: #ddd;}
+
+.fa-bars{color:white;}
+
+@media(max-width:650px){
+    body{
+        padding-top: 10%;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+
+    .item, .profile, .config{
+        display: none;
+    }
+
+    ul li.bars{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline-block;
+    }
+
+    .show{
+        display:block;
+    }
 }
