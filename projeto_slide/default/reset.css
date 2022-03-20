@@ -1,33 +1,42 @@
 *{
-    margin: 0px;
-    padding:0px;
-    box-sizing:border-box;
-    text-decoration:none;
-    color:black;
-    list-style:none;
-  }
-  
-  input[type=number]::-webkit-inner-spin-button { 
-      -webkit-appearance: none;
-  }
-  input{ 
-     -moz-appearance: textfield;
-     appearance: textfield;
-     border:0 none;
-     border-bottom:1px solid black;
-     text-align:center;
-  }
-  input:focus, textarea:focus, select:focus{
-    outline:0;
-    box-shadow:0 0 0 0;
-  }
-  select option{
-    text-align:center;
-  }
-  select{
-    border:0 none;
-  }
-  
-  textarea{
-    resize:none;
-  }
+  margin: 0px;
+  padding:0px;
+  box-sizing:border-box;
+  text-decoration:none;
+  color:black;
+  list-style:none;
+}
+
+/*importar fonte*/
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+input{ 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  border:0 none;
+  border-bottom:1px solid black;
+  text-align:center;
+}
+input:focus, textarea:focus, select:focus{
+  outline:0;
+  box-shadow:0 0 0 0;
+}
+select option{
+  text-align:center;
+}
+select{
+  border:0 none;
+}
+
+textarea{
+  resize:none;
+}
+
+h2{
+  text-align: center;
+  margin: 20px;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
